@@ -114,7 +114,7 @@ bool Model::Engineer::updateEngineer() const {
 
 bool Model::Engineer::deleteEngineer() const {
 	try {
-		system("cls");
+		//system("cls");
 		return deleteEmployee();
 	}
 	catch (std::exception& e) {

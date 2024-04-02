@@ -129,4 +129,8 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="employee.db" />
+  </ItemGroup>
 </Project>

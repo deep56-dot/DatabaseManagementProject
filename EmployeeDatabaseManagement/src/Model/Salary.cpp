@@ -77,7 +77,7 @@ bool Model::Salary::insertSalary(int id) const {
 
 bool Model::Salary::updateSalary() const {
 	try {
-		system("cls");
+		//system("cls");
 
 		//  for testing 
 		std::string select = "select * from Salary where Sid = " + std::to_string(getId()) + ";";

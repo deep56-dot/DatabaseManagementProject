@@ -8,3 +8,47 @@
 2/4/2024 :: 9:59:28 [Info] [System] Table darshan backup successfull!!!! 
 2/4/2024 :: 9:59:28 [Info] [System] Table deep backup successfull!!!! 
 2/4/2024 :: 9:59:28 [Info] [System] Table darsh backup successfull!!!! 
+2/4/2024 :: 14:33:10 [Info] [System] Database Open Successfully 
+2/4/2024 :: 14:37:40 [Info] [System] Employee Updated with Id:  301 
+2/4/2024 :: 14:37:43 [Info] [System] Engineer updated for Id:  301 
+2/4/2024 :: 14:38:10 [Info] [System] Employee Deleted with Id:  305 
+2/4/2024 :: 14:39:46 [Info] [System] Employee added for Id:  305 
+2/4/2024 :: 14:39:48 [Info] [System] Engineer Added for Id:  305 
+2/4/2024 :: 14:42:21 [Info] [System] Employee Updated with Id:  502 
+2/4/2024 :: 14:42:23 [Info] [System] Manager updated for Id:  502 
+2/4/2024 :: 14:42:35 [Info] [System] Employee Deleted with Id:  502 
+2/4/2024 :: 14:43:56 [Info] [System] Employee added for Id:  502 
+2/4/2024 :: 14:43:58 [Info] [System] Manager Added for Id:  502 
+2/4/2024 :: 14:44:19 [Info] [System] Employee Updated with Id:  502 
+2/4/2024 :: 14:44:19 [Info] [System] Manager updated for Id:  502 
+2/4/2024 :: 14:45:8 [Info] [System] Salary updated for Id:  301 
+2/4/2024 :: 14:45:53 [Info] [System] Salary updated for Id:  301 
+2/4/2024 :: 14:47:42 [Info] [System] Database Open Successfully 
+2/4/2024 :: 14:48:49 [Info] [System] test: Record Inserted successfully!!!! 
+2/4/2024 :: 14:49:15 [Info] [System] test: Record Inserted successfully!!!! 
+2/4/2024 :: 14:49:29 [Info] [System] test: Record updated successfully with id 2 
+2/4/2024 :: 14:49:52 [Info] [System] test: Record deleted successfully with id 2 
+2/4/2024 :: 14:50:15 [Info] [System] Database closed Successfully 
+2/4/2024 :: 17:12:58 [Info] [System] Database Open Successfully 
+2/4/2024 :: 17:15:14 [Info] [System] test: Record Inserted successfully!!!! 
+2/4/2024 :: 17:15:25 [Info] [System] test: Record Inserted successfully!!!! 
+2/4/2024 :: 17:15:48 [Info] [System] test: Record updated successfully with id 2 
+2/4/2024 :: 17:16:0 [Info] [System] test: Record deleted successfully with id 2 
+2/4/2024 :: 17:30:11 [Info] [System] Database Open Successfully 
+2/4/2024 :: 17:30:43 [Info] [System] Department added for Id:  3 
+2/4/2024 :: 17:31:11 [Info] [System] Department Updated with Id:  3 
+2/4/2024 :: 17:31:18 [Info] [System] Department Deleted with Id:  2 
+2/4/2024 :: 17:31:41 [Info] [System] Department Updated with Id:  1 
+2/4/2024 :: 17:34:50 [Info] [System] Database Open Successfully 
+2/4/2024 :: 17:34:53 [Info] [System] Table Employee backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table Engineer backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table Manager backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table Salary backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table Department backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table demo backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table deep backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table dscvs backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table test backup successfull!!!! 
+2/4/2024 :: 17:34:53 [Info] [System] Table BackUp successfull!!!!!! 
+2/4/2024 :: 18:29:27 [Info] [System] Database Open Successfully 
+2/4/2024 :: 18:29:30 [Info] [System] Database closed Successfully 

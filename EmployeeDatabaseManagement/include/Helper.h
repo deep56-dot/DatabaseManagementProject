@@ -8,7 +8,9 @@
 #include<optional>
 
 namespace utility { 
-
+	inline bool validate(std::string s, std::regex r) {
+		return std::regex_match(s, r);
+	}
 	inline std::optional<std::string> input(const std::string prompt, const std::regex& r, bool flag=false) {
 		std::string input; 
 
@@ -22,7 +24,7 @@ namespace utility {
 
 			if (input == "#" && flag == false) return ""; 
 			else if (input == "#" && flag == true) return "0"; 
-			if (!std::regex_match(input, r)) { 
+			if (!validate(input,r)) {
 				std::cout << "\x1b[38;5;208mEnter valid input\x1b[0m\n";
 				cnt++;
 			}

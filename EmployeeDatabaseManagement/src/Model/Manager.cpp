@@ -116,7 +116,7 @@ bool Model::Manager::updateManager() const {
 bool Model::Manager::deleteManager() const {
 
 	try {
-		system("cls");
+		//system("cls");
 		return deleteEmployee();
 	}
 	catch (std::exception& e) {

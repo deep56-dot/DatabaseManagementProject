@@ -13,25 +13,25 @@ bool userInput(Model::Employee* emp) {
 		std::string msg = " Enter # to leave the field Empty: \n";
 
 		if (auto tmp = input("Enter Eid: ", idRegex); tmp.has_value()) emp->setId(std::stoi(tmp.value()));
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter FirstName OR " + msg, alphaRegex); tmp.has_value()) emp->setFirstname(tmp.value());
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter LastName OR " + msg, alphaRegex); tmp.has_value()) emp->setLastname(tmp.value());
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter DOB (dd-mm-yyyy) OR " + msg, dateRegex); tmp.has_value()) emp->setDob(tmp.value());
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter Mobile OR " + msg, mobileRegex); tmp.has_value()) emp->setMobile(tmp.value());
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter Email OR " + msg, emailRegex); tmp.has_value()) emp->setEmail(tmp.value());
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter Address OR " + msg, allRegex); tmp.has_value()) emp->setAddress(tmp.value());
-		//else return;
+		else return false;
 
 		auto gender = input("Enter Gender(Male / Female / Other): ", genderRegex);
 		if (gender.has_value()) {
@@ -46,35 +46,35 @@ bool userInput(Model::Employee* emp) {
 			}
 		}
 		else {
-			//return;
+			 return false;
 		}
 
 		if (auto tmp = input("Enter DOJ(dd-mm-yyyy) OR " + msg, dateRegex); tmp.has_value()) emp->setDoj(tmp.value());
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter Manager Id: ", idRegex); tmp.has_value()) emp->setManagerId(stoi(tmp.value()));
-		//else return;
+		else return false;
 
 		if (auto tmp = input("Enter Department Id: ", idRegex); tmp.has_value()) emp->setDepartmentId(stoi(tmp.value()));
-		//else return;
+		else return false;
 
 		if (auto tmp = userInputSalary(); tmp.has_value()) emp->s = tmp.value();
-		//else return;
+		else return false;
 
 		if (auto eng = dynamic_cast<Model::Engineer*>(emp); eng) {
 			if (auto tmp = input("Enter Programming Language OR " + msg, allRegex); tmp.has_value()) eng->setProgramming_language(tmp.value());
-			//else return;
+			else return false;
 
 			if (auto tmp = input("Enter Specialization OR " + msg, allRegex); tmp.has_value()) eng->setSpecialization(tmp.value());
-			//else return;
+			else return false;
 		}
 
 		if (auto mng = dynamic_cast<Model::Manager*>(emp); mng) {
 			if (auto tmp = input("Enter Management Experience OR " + msg, digitRegex); tmp.has_value()) mng->setManagementExperience(std::stoi(tmp.value()));
-			//else return;
+			else return false;
 
 			if (auto tmp = input("Enter Project Title OR ", allRegex); tmp.has_value())mng->setProjectTile(tmp.value());
-			//else return;
+			else return false;
 		}
 
 		return true;

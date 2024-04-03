@@ -40,10 +40,10 @@ namespace utility {
 	}
 
 	inline void waitMenu() {
-		/*std::cout << "Press 0 to continue....\n";
+		std::cout << "Press 0 to continue....\n";
 		int i;
 		std::cin >> i;
-		std::cin.get();*/
+		std::cin.get();
 	}
 }
 

@@ -21,6 +21,7 @@ std::optional<Model::Engineer> updateEngineerController() {
 		if (DB::Database::row == 0) {
 			std::cout << "\x1b[33m Engineer is not in database \x1b[0m\n";
 			waitMenu();
+			logging::Error("Engineer is not in database");
 			return std::nullopt;
 		}
 

@@ -52,6 +52,7 @@ bool Model::Department::insertDepartment() const  {
 		if (rc == 19) {
 			std::cout << "\x1b[33mEntered manager is not available in particular table OR Entered department ID is already exist in table  \x1b[0m\n\n";
 			waitMenu();
+			logging::Error("Entered manager is not available in particular table OR Entered department ID is already exist in table");
 			return false;
 		}
 		else if (rc == 0) {
@@ -89,8 +90,9 @@ bool Model::Department::updateDepartment() const  {
 		int rc = DB::Database::getInstance().executeQuery(query.c_str());
 
 		if (rc == 19) {
-			std::cerr << "\x1b[33m You can not assigne value because entered manager is not in database \x1b[0m\n\n";
+			std::cerr << "\x1b[33m You can not assigne value because entered department is not in database \x1b[0m\n\n";
 			waitMenu();
+			logging::Error("You can not assigne value because entered department is not in database");
 			return false;
 		}
 		else if (rc == 0) {
@@ -119,6 +121,7 @@ bool Model::Department::deleteDepartment() const  {
 			if (change == 0) {
 				std::cout << "\x1b[33mSelected Department is not in database\x1b[0m\n";
 				waitMenu();
+				logging::Error("Selected Department is not in database");
 				return false;
 			}
 			else {
@@ -131,6 +134,7 @@ bool Model::Department::deleteDepartment() const  {
 		else if (rc == 19) {
 			std::cout << "\x1b[33mYou can not Delete this department because there is employee which are working in this department \x1b[0m \n\n";
 			waitMenu();
+			logging::Error("You can not Delete this department because there is employee which are working in this department");
 			return false;
 		}
 		return false;

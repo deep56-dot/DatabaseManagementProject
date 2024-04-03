@@ -59,6 +59,7 @@ bool Model::Engineer::insertEngineer() const {
 			}
 			else if (rc == 19) {
 				std::cout << "\x1b[33m Entered Enginner is already exist\x1b[0m\n\n";
+				logging::Error("Entered Enginner is already exist");
 				waitMenu();
 				return false;
 			}
@@ -93,6 +94,7 @@ bool Model::Engineer::updateEngineer() const {
 			else if (rc == 19) {
 				std::cout << "\x1b[33m  You can not assign value beacuse entered manager or department is not in particular table OR Engineer is already in database \x1b[0m\n\n";
 				waitMenu(); 
+				logging::Error("You can not assign value beacuse entered manager or department is not in particular table OR Engineer is already in database "); 
 				return false;
 			}
 			return false;

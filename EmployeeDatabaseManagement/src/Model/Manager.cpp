@@ -61,6 +61,7 @@ bool Model::Manager::insertManager() const {
 			else if (rc == 19) {
 				std::cout << "\x1b[33m Entered Manager is already exist\x1b[0m\n\n";
 				waitMenu(); 
+				logging::Error("Entered Manager is already exist");
 				return false;
 			}
 		}
@@ -94,6 +95,7 @@ bool Model::Manager::updateManager() const {
 			else if (rc == 19) {
 				std::cout << "\x1b[33m  You can not assign value beacuse entered manager or department is not in particular table \x1b[0m\n\n";
 				waitMenu();
+				logging::Error("You can not assign value beacuse entered manager or department is not in particular table");
 				return false;
 			}
 			return false;

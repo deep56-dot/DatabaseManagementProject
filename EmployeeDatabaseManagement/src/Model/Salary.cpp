@@ -87,6 +87,7 @@ bool Model::Salary::updateSalary() const {
 		if (DB::Database::row == 0) {
 			std::cout << "\x1b[33m Employee is not in database \x1b[0m\n";
 			waitMenu();
+			logging::Error("Employee is not in database");
 			return false;
 		}
 

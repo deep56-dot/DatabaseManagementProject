@@ -116,6 +116,7 @@ std::optional<Model::Department> updateDepartmentController() {
 		if (DB::Database::row == 0) {
 			std::cout << "\x1b[33m Department is not in database \x1b[0m\n";
 			waitMenu();
+			logging::Error("Selected Department is not in database");
 			return std::nullopt;
 		}
 

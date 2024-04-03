@@ -19,6 +19,7 @@ std::optional<Model::Manager> updateManagerController() {
 		if (DB::Database::row == 0) {
 			std::cout << "\x1b[33m Manager is not in database \x1b[0m\n";
 			waitMenu();
+			logging::Error("Manager is not in database");
 			return std::nullopt;
 		}
 

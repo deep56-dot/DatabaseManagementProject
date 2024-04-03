@@ -180,6 +180,7 @@ std::optional<Model::Employee> updateEmployeeController() {
 		if (DB::Database::row == 0) {
 			std::cout << "\x1b[33m Employee is not in database \x1b[0m\n";
 			waitMenu();
+			logging::Error("Employee is not in database");
 			return std::nullopt;
 		}
 		auto tmp = Model::Employee::getEmployee(std::to_string(e.getId()));

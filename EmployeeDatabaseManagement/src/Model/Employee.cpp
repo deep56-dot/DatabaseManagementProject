@@ -68,6 +68,7 @@ bool Model::Employee::insertEmployee() const {
 		else if (rc == 19) {
 			std::cout << "\x1b[33mEntered manager or department is not available in particular table Or entered employee is already exist \x1b[0m\n\n";
 			waitMenu();
+			logging::Error("Entered manager or department is not available in particular table Or entered employee is already exist");
 			return false;
 		}
 		return true;
@@ -89,6 +90,7 @@ bool Model::Employee::updateEmployee() const {
 		if (DB::Database::row == 0) {
 			std::cout << "\x1b[33m Employee is not in database \x1b[0m\n";
 			waitMenu();
+			logging::Error("Employee is not in database ");
 			return false;
 		}
 
@@ -111,6 +113,7 @@ bool Model::Employee::updateEmployee() const {
 		if (rc == 19) {
 			std::cerr << "\x1b[33m You can not assigne value because entered manager or department is not in database OR entered employee is already in database \x1b[0m\n\n";
 			waitMenu();
+			logging::Error("You can not assigne value because entered manager or department is not in database OR entered employee is already in database");
 			return false;
 		}
 		else if (rc == 0) {
@@ -141,6 +144,7 @@ bool Model::Employee::deleteEmployee() const {
 			if (change == 0) {
 				std::cout << "\x1b[33m Selected Employee is not in database\x1b[0m\n";
 				waitMenu();
+				logging::Error("Employee is not in database");
 				return false;
 			}
 			else {
@@ -153,6 +157,7 @@ bool Model::Employee::deleteEmployee() const {
 		else if (rc == 19) {
 			std::cout << "\x1b[33m You can not Delete this Employee because there is employee which are managed by in this Employee \x1b[0m \n\n";
 			waitMenu();
+			logging::Error("You can not Delete this Employee because there is employee which are managed by in this Employee");
 			return false;
 		}
 		return false;
